@@ -44,10 +44,10 @@ def perform
     mail << get_townhall_email(x)
     name << get_townhall_name(x)
   end
- # Hash Final
+  # Hash Final
   hash_all = Hash[name.zip(mail)]
 
-  #puts hash_all
+  # puts hash_all
   # Mise en forme du tableau
   new_array = hash_all.split_into(name.size)
 
